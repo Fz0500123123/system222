@@ -160,7 +160,7 @@ client.on('message', async message => {
   
   client.on('message',async message => {
     if(message.content.startsWith("--restart")) {
-      if(message.author.id !== "406192153979518976") return message.react('🖕');
+      if(message.author.id !== "406192153979518976") return message.react('ðŸ–•');
   let customemoji = client.emojis.find(r => r.name === '144778947694897');
   let customemoji1 = client.emojis.find(r => r.name === '97976489784694');
     message.channel.send(`${customemoji} Restarting.`).then(msg => {
@@ -178,10 +178,9 @@ client.on('message', async message => {
     console.log(`Restarting..`);
     setTimeout(() => {
       client.destroy();
-      client.login(process.env.BOT_TOKEN);
     },3000);
   }
 });
 
-   client.login("NDk1MjM1NDU2NDgxMzYxOTUy.Do_HlQ.ukAMkR0Do5KVVhUMG4tPG55HRv4");
+client.login(process.env.BOT_TOKEN);
 
